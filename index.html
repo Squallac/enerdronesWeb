@@ -5,15 +5,15 @@
     <title>EnerDrones</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!--Bootstrap nav-->
     <nav></nav>
 
     <!--Intro-->
-    <header id="intro">
-        <div>
+    <header id="intro" class="site-header">
+        <p class="site-header__floating-text">
             The company provides powering solutions for drones, 
             offering autonomous charging stations with wireless energy beaming technology and a drone’s battery changer.
             Enhancing drone autonomy, reducing idle time, and improving the capabilities of autonomous vehicles.
@@ -23,46 +23,70 @@
     <!--About-->
     <article id="about">
         <section id="problem">
-            Widespread adoption of UAVs in different industries has been hampered by various factors, one of the most prevalent ones is the power source and its short endurance.
-
-            Current power sources are mostly Li-ion batteries, and although there have been efforts to “quick charge” them, it still takes too much time compared to alternatives like oil-powered UAVs.
-            That limitation is key for UAVs whose autonomy and “work time” directly depends on it, and one that if solved, could open a whole new arrange of capabilities.
-
+            <h1>
+                The problem
+            </h1>
+            <p>Widespread adoption of UAVs in different industries has been hampered by various factors, one of the most prevalent ones is the power source and its short endurance.</p>
+            <p>Current power sources are mostly Li-ion batteries, and although there have been efforts to “quick charge” them, it still takes too much time compared to alternatives like oil-powered UAVs.</p>
+            <p>That limitation is key for UAVs whose autonomy and “work time” directly depends on it, and one that if solved, could open a whole new arrange of capabilities.</p>
         </section>
         <section id="solution">
-            An autonomous charging station equipped with the next techs:
-
-            A laser beaming system to power in-flight UAVs capable enough to maintain or considerably extending its operation range.
-
-            An autonomous battery changer to swiftly remove and place a fully charge battery to automate the process and reduce idle time.
-            This solutions can potentially double the flight time while allowing them to perform new tasks with its virtual infinite autonomy.
-
+            <h1>The solution</h1>
+            <p>An autonomous charging station equipped with the next techs:</p>
+            <ul>
+                <li>A laser beaming system to power in-flight UAVs capable enough to maintain or considerably extending its operation range.</li>
+                <li>An autonomous battery changer to swiftly remove and place a fully charge battery to automate the process and reduce idle time.</li>
+            </ul>
+            <p>
+                This solutions can potentially double the flight time while allowing them to perform new tasks with its virtual infinite autonomy.
+            </p>
         </section>
         <section id="advantages">
-            Fully developed Power Laser Beaming technologies.
-            State-of-the-art nanotechnologies for receiving beaming energy panels.
-            Low & affordable solution to enlarge drone operations.
-            Two possible drone time-operation solutions for almost every situation and application currently for drones.
-            Potential proprietary patents.
-            Growing drone market. 
-            Stagnant development on battery technology.
-            Technology/ price ratio performance.
+            <h1>Advantages</h1>
+            <ul>
+                <li>Fully developed Power Laser Beaming technologies.</li>
+                <li>State-of-the-art nanotechnologies for receiving beaming energy panels.</li>
+                <li>Low & affordable solution to enlarge drone operations.</li>
+                <li>Two possible drone time-operation solutions for almost every situation and application currently for drones.</li>
+                <li>Technology/ price ratio performance.</li>
+            </ul>
         </section>        
     </article>
 
     <!--Team-->
     <article id="team">
         <section id="team-members">
-            <img alt="Eli Rios" src="images/team/eli.jpg" />
-            <img alt="Jovan Rebolledo" src="images/team/jovan.jpg" />
-            <img alt="Alfonso Cabrera" src="images/team/othon.jpg" />
-            <img alt="Raúl Ruiz Ramírez" src="images/team/raul.jpg" />
-            <img alt="Javier Hidalgo" src="images/team/javier.jpg" />
+            <figure>
+                <img alt="Eli Rios" src="images/team/eli.jpg" />
+                <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+            </figure> 
+            <figure>
+                <img alt="Jovan Rebolledo" src="images/team/jovan.jpg" />
+                <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+            </figure> 
+            <figure>
+                <img alt="Alfonso Cabrera" src="images/team/othon.jpg" />
+                <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+            </figure> 
+            <figure>
+                <img alt="Raúl Ruiz Ramírez" src="images/team/raul.jpg" />
+                <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+            </figure> 
+            <figure>
+                <img alt="Javier Hidalgo" src="images/team/javier.jpg" />
+                <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+            </figure> 
         </section>
         <section id="alliances">
-            <img alt="singularity university" src="/images/alliances/singularity.png" />
-            <img alt="iRobotics" src="/images/alliances/iRobotics.jpeg" />
-            <img alt="Nopo" src="/images/alliances/nopo.png" />
+            <figure>
+                <img alt="singularity university" src="images/alliances/singularity.png" />                
+            </figure>
+            <figure>
+                <img alt="iRobotics" src="images/alliances/iRobotics.jpeg" />                
+            </figure>
+            <figure>
+                <img alt="Nopo" src="images/alliances/nopo.png" />                
+            </figure>
         </section>
     </article>    
 
@@ -74,6 +98,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<script src="/js/main.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
