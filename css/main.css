@@ -20,6 +20,45 @@
     padding: 20px;
 }
 
+.about__item {
+    position: relative;    
+    background: #00020c;
+}
+
+.about__heading {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #00020c;
+    color: #2264b0;  
+    opacity: 1;      
+    transition: opacity 1s;
+    cursor: pointer;
+}
+
+.about__heading:hover {    
+    opacity: 0;      
+    transition: opacity 1s;
+}
+
+.about__heading-text{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.about__explanatory-text{
+    text-align: center;
+    color: #9d9fa2;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { }
 
@@ -28,8 +67,9 @@
     .site-header{
         background-image: url('../images/energy.png');
     }
-    .site-header__floating-text{       
-        font-size: 1.5em;
+    .site-header__floating-text,
+    .about__explanatory-text {       
+        font-size: 1.5rem;
         padding: 40px;
     }
 }
