@@ -23,6 +23,11 @@
 .about__item {
     position: relative;    
     background: #00020c;
+    height: 90vh;
+}
+
+.about__item--secondary {        
+    background: #9d9fa2;    
 }
 
 .about__heading {
@@ -31,11 +36,16 @@
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 1;
     background: #00020c;
     color: #2264b0;  
     opacity: 1;      
     transition: opacity 1s;
     cursor: pointer;
+}
+
+.about__heading--secondary {
+    background: #9d9fa2;
 }
 
 .about__heading:hover {    
@@ -45,18 +55,34 @@
 
 .about__heading-text{
     display: block;
-    position: absolute;
+    position: absolute;    
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
 }
 
 .about__explanatory-text{
-    text-align: center;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
     color: #9d9fa2;
     padding: 20px;
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.about__explanatory-text--secondary{
+    color: #00020c;
+}
+
+footer{
+    background-color: #00020c;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
 }
 
 /* Small devices (landscape phones, 576px and up)*/
