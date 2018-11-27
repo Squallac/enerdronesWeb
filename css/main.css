@@ -1,16 +1,33 @@
+/* CSS Developed by Raul Ruiz 2018*/
 html, body{
     font-family: 'Roboto', sans-serif;    
 }
+
+.hide{
+    display: none;
+}
+
+/* Navigation */
 .nav-item{
     font-family: 'Play', sans-serif;
 }
 
+.nav-item button{
+    font-size: 1.1em;
+}
+
+/* Header*/
 .site-header {
     width: 100%;
     height: 90vh;
     background-image: url('../images/energy.png');
     background-size: cover;
     position: relative;
+}
+
+.site-header img{
+    width: 40%;
+    margin-bottom: 10px;
 }
 
 .site-header strong{
@@ -27,8 +44,7 @@ html, body{
     background-color: rgba(0, 8, 53, 0.753);
 
     text-align: center;
-    color: white;
-    font-size: 1.2rem;
+    color: white;    
     padding: 20px;
 
     animation-duration: 2.5s;
@@ -43,6 +59,19 @@ html, body{
 
 .about__item--secondary {        
     background: #9d9fa2;    
+}
+
+.about__item--network{
+    background-image: url('../images/network.jpg');
+    background-size: cover; 
+    color: #fff;
+}
+
+.about__item--station{
+    background-image: url('../images/chargingStation.jpg');
+    background-size: cover; 
+    background-position: bottom left;
+    color: #fff;
 }
 
 .about__heading {
@@ -63,18 +92,28 @@ html, body{
     background: #9d9fa2;
 }
 
+.about__heading--network {
+    background: #2264b0;
+    color: white;
+}
+
 .about__heading:hover {    
     opacity: 0;      
     transition: opacity 1s;
 }
 
 .about__heading-text{
+    text-align: center;
     display: block;
     position: absolute;    
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
     font-family: 'Play', sans-serif;
+}
+
+.about__heading-text i{
+    font-size: 0.5em;
 }
 
 .about__explanatory-text{
@@ -93,6 +132,32 @@ html, body{
 .about__explanatory-text--secondary{
     color: #00020c;
 }
+
+.about__explanatory-text--network{
+    color: #fff;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.about__explanatory-text--station{
+    color: #000;
+    background-color: rgba(255,255,255,0.4);
+}
+
+
+.about__explanatory-text strong{
+    font-family: 'Play', sans-serif;
+    color: white;
+}
+
+.about__explanatory-text li{
+    margin-bottom: 10px;
+}
+
+.about__explanatory-important{
+    font-family: 'Play', sans-serif;
+    font-size: 1.3em;
+}
+
 
 /* Team */
 .team h1{
@@ -185,6 +250,21 @@ html, body{
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
 }
+
+.team-alliances figure.drone-fund img{
+    max-width: 150px;
+}
+
+/*Modal*/
+.modal-body input,
+.modal-body textarea{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact__error{
+    color: red;
+}
 /* Footer */
 footer{
     background-color: #00020c;
@@ -212,7 +292,7 @@ footer{
     }
 
     .team-alliances figure{
-        width: 33%;
+        width: 50%;
     }
 }
 
@@ -221,8 +301,14 @@ footer{
     .site-header{
         background-image: url('../images/energy.png');
     }
+
+    .site-header img{
+        width: 20%;
+        margin-bottom: 30px;
+    }
+
     .site-header__floating-text,
-    .about__explanatory-text {       
+    .about__explanatory-text {      
         font-size: 1.5rem;
         padding: 40px;
     }

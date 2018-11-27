@@ -8,7 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Play:700|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/regular.css" integrity="sha384-OEIzojYBMrmz48aIjVQj7VG38613/sxpP58OW9h5zBYC7biGFlv9tyu5kWmaAYlF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -24,15 +26,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#team">Team</a>
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
-                        Contact
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">                        
+                        <i class="far fa-envelope animated slideInUp"></i>
                     </button>
                 </li>
             </ul>
@@ -43,8 +45,8 @@
     <!--Intro-->
     <header id="intro" class="site-header">
         <p class="site-header__floating-text animated fadeIn">
-            <strong>EnerDrones</strong> <br/> Our company provides powering solutions for drones,
-            offering autonomous charging stations with wireless energy beaming technology and a drone’s battery
+            <img src="images/original.png" alt="EnerDrones"><br/> Our company provides powering solutions for drones,
+            offering <b>autonomous charging stations</b> with wireless energy beaming technology and a drone’s battery
             changer.
             Enhancing drone autonomy, reducing idle time, and improving the capabilities of autonomous vehicles.
         </p>
@@ -54,37 +56,53 @@
     <article id="about" class="about">
         <section id="problem" class="about__item">
             <h1 class="about__heading m-0">
-                <span class="about__heading-text">The opportunity</span>                
+                <span class="about__heading-text">The opportunity <i class="far fa-hand-point-up d-block d-md-none d-lg-none animated pulse infinite"></i></span>    
+                
             </h1>
             <div class="about__explanatory-text">
-                <p>Widespread adoption of UAVs in different industries has been hampered by various factors, one of the
-                    most prevalent ones is the power source and its short endurance. Current power sources are mostly Li-ion batteries, and although there have been efforts to “quick
-                    charge” them, it still takes too much time compared to alternatives like oil-powered UAVs.</p>
-                <p class="m-0">That limitation is key for UAVs whose autonomy and “work time” directly depends on it, and one that if
-                    solved, could open a whole new arrange of capabilities.</p>
+                <p>
+                    Widespread adoption of UAVs in different industries has been hampered by various factors, one of the
+                    most prevalent ones is <strong>the power source and its short endurance.</strong>
+                </p>
+                <p> 
+                    Current power sources are mostly Li-ion batteries, and although there have been efforts to “quick
+                    charge” them, it still takes too much time compared to alternatives like oil-powered UAVs.
+                </p>
+                <p class="m-0"><strong>That limitation is key for UAVs whose autonomy and “work time” directly depends on it, and one that if
+                    solved, could open a whole new arrange of capabilities.</strong></p>
             </div>            
         </section>
-        <section id="solution" class="about__item about__item--secondary">
-            <h1 class="about__heading about__heading--secondary m-0">
-                <span class="about__heading-text">The solution</span>  
+        <section id="solution" class="about__item about__item--network">
+            <h1 class="about__heading about__heading--network m-0">
+                <span class="about__heading-text">The solution <i class="far fa-hand-point-up d-block d-md-none d-lg-none animated pulse infinite"></i></span>
             </h1>
-            <div class="about__explanatory-text about__explanatory-text--secondary">
-                <p>An autonomous charging station equipped with the next techs:</p>
-                <ul>
-                    <li>A laser beaming system to power in-flight UAVs capable enough to maintain or considerably extending
-                        its operation range.</li>
-                    <li>An autonomous battery changer to swiftly remove and place a fully charge battery to automate the
-                        process and reduce idle time.</li>
-                </ul>
-                <p class="m-0">
-                    This solutions can potentially double the flight time while allowing them to perform new tasks with its
-                    virtual infinite autonomy.
+            <div class="about__explanatory-text about__explanatory-text--network">
+                <p class="about__explanatory-important">
+                    Create charging infrastructure for drones
                 </p>
+                <ul>
+                    <li>Gas pump-like charging network</li>
+                    <li>Increasing “work time”, efficency</li>
+                    <li>Extending Operational Range</li>
+                </ul>
+            </div>            
+        </section>
+        <section id="solution" class="about__item about__item--station">            
+            <div class="about__explanatory-text about__explanatory-text--station">                
+                <p class="about__explanatory-important">
+                    Charging Station
+                </p>
+                <ul>
+                    <li>Wireless charging</li>
+                    <li>Charging 7x faster</li>
+                    <li>Microwave energy beaming technology</li>
+                    <li>High efficiency nanotechnology rectenna.</li>
+                </ul>
             </div>            
         </section>
         <section id="advantages" class="about__item">            
             <h1 class="about__heading m-0">
-                <span class="about__heading-text">Advantages</span>  
+                <span class="about__heading-text">Advantages <i class="far fa-hand-point-up d-block d-md-none d-lg-none animated pulse infinite"></i></span>
             </h1>
             <div class="about__explanatory-text">
                 <ul>
@@ -128,6 +146,30 @@
                 </figcaption>
             </figure>
             <figure class="team__member">
+                <img class="team__member-photo" alt="Javier Hidalgo" src="images/team/javier.jpg" />
+                <figcaption class="team__member-info">                    
+                    <span class="team__member-name">Javier Hidalgo</span> <br/>
+                    <span class="team__member-title">Sales/Marketing Director</span><br/>
+                    <ul>
+                        <li>CEO/owner ArmoredMex </li>
+                        <li>B.S. Business Administration</li>
+                        <li>Project Manager </li>
+                    </ul>
+                </figcaption>
+            </figure>
+            <figure class="team__member">
+                <img class="team__member-photo" alt="Gadhadar Reddy" src="images/team/gadhadar.jpg" />
+                <figcaption class="team__member-info">                    
+                    <span class="team__member-name">Gadhadar Reddy</span> <br/>
+                    <span class="team__member-title">Head of HW</span><br/>
+                    <ul>
+                        <li>MSc Nanotechnology </li>
+                        <li>GSP 2016, Singularity U </li>
+                        <li>Entrepreneur and researcher</li>
+                    </ul>
+                </figcaption>
+            </figure>
+            <figure class="team__member">
                 <img class="team__member-photo" alt="Alfonso Cabrera" src="images/team/othon.jpg" />
                 <figcaption class="team__member-info">
                     <span class="team__member-name">Alfonso Cabrera</span> <br/>
@@ -143,67 +185,56 @@
                 <img class="team__member-photo" alt="Raúl Ruiz Ramírez" src="images/team/raul.jpg" />
                 <figcaption class="team__member-info">
                     <span class="team__member-name">Raúl Ruiz R.</span> <br/>
-                    <span class="team__member-title">Software Developer</span><br/>
+                    <span class="team__member-title">Head of UI/UX</span><br/>
                     <ul>
                         <li>Entrepreneur</li>
-                        <li>Front End Developer</li>
                         <li>B.S Digital Systems</li>
                     </ul>
                 </figcaption>
             </figure>
-            <figure class="team__member">
-                <img class="team__member-photo" alt="Javier Hidalgo" src="images/team/javier.jpg" />
-                <figcaption class="team__member-info">                    
-                    <span class="team__member-name">Javier Hidalgo</span> <br/>
-                    <span class="team__member-title">Sales Director / Business Dev</span><br/>
-                    <ul>
-                        <li>CEO/owner ArmoredMex </li>
-                        <li>B.S. Business Administration</li>
-                        <li>Project Manager </li>
-                    </ul>
-                </figcaption>
-            </figure>
+            
         </section>
         <h1>Alliances</h1>
-        <section id="alliances" class="team-alliances">            
+        <section id="alliances" class="team-alliances">
             <figure>
-                <img alt="singularity university" src="images/alliances/singularity.png" />
+                <img alt="iRobotics" src="images/alliances/iRobotics.png" />
             </figure>
-            <figure>
-                <img alt="iRobotics" src="images/alliances/iRobotics.jpeg" />
-            </figure>
-            <figure>
-                <img alt="Nopo" src="images/alliances/nopo.png" />
-            </figure>
+            <figure class="drone-fund">
+                <img alt="Drone Fund" src="images/alliances/droneFund.png" />
+            </figure>            
         </section>
     </article>
 
     <!--Modal contacto-->
-
-
-    <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <div class="email-form">
+                        <input id="contact_name" type="text" placeholder="Name" />
+                        <input id="contact_email" type="email" placeholder="Email" />
+                        <textarea id="contact_message" placeholder="Message"></textarea>
+                        <div class="contact__error hide"></div>
+                    </div>
+                    <div class="email-confirmed text-center large hide padding">
+							Thank you for sending us your email. <br/>
+							We'll be in touch very soon! <br/>
+					</div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button id="send-form" type="button" class="btn btn-primary">Send Email</button>
                 </div>
             </div>
         </div>
     </div>
-
-
 
     <footer> EnerDrones 2018 </footer>
 
