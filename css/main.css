@@ -70,7 +70,7 @@ html, body{
 .about__item--station{
     background-image: url('../images/chargingStation.jpg');
     background-size: cover; 
-    background-position: bottom left;
+    background-position: center;
     color: #fff;
 }
 
@@ -139,8 +139,8 @@ html, body{
 }
 
 .about__explanatory-text--station{
-    color: #000;
-    background-color: rgba(255,255,255,0.4);
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
 }
 
 
