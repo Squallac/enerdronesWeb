@@ -1,0 +1,328 @@
+/* CSS Developed by Raul Ruiz 2018*/
+html, body{
+    font-family: 'Roboto', sans-serif;    
+}
+
+.hide{
+    display: none;
+}
+
+/* Navigation */
+.nav-item{
+    font-family: 'Play', sans-serif;
+}
+
+.nav-item button{
+    font-size: 1.1em;
+}
+
+/* Header*/
+.site-header {
+    width: 100%;
+    height: 90vh;
+    background-image: url('../images/energy.png');
+    background-size: cover;
+    position: relative;
+}
+
+.site-header img{
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.site-header strong{
+    font-size: 2rem;
+    font-family: 'Play', sans-serif;
+}
+
+.site-header__floating-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;    
+    width: 80%;
+    transform: translate3d(-50%, -50%, 0);
+    background-color: rgba(0, 8, 53, 0.753);
+
+    text-align: center;
+    color: white;    
+    padding: 20px;
+
+    animation-duration: 2.5s;
+}
+
+/* About */
+.about__item {
+    position: relative;    
+    background: #00020c;
+    height: 90vh;
+}
+
+.about__item--secondary {        
+    background: #9d9fa2;    
+}
+
+.about__item--network{
+    background-image: url('../images/network.jpg');
+    background-size: cover; 
+    color: #fff;
+}
+
+.about__item--station{
+    background-image: url('../images/chargingStation.jpg');
+    background-size: cover; 
+    background-position: center;
+    color: #fff;
+}
+
+.about__heading {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: #00020c;
+    color: #2264b0;  
+    opacity: 1;      
+    transition: opacity 1s;
+    cursor: pointer;
+}
+
+.about__heading--secondary {
+    background: #9d9fa2;
+}
+
+.about__heading--network {
+    background: #2264b0;
+    color: white;
+}
+
+.about__heading:hover {    
+    opacity: 0;      
+    transition: opacity 1s;
+}
+
+.about__heading-text{
+    text-align: center;
+    display: block;
+    position: absolute;    
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    font-family: 'Play', sans-serif;
+}
+
+.about__heading-text i{
+    font-size: 0.5em;
+}
+
+.about__explanatory-text{
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    color: #9d9fa2;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about__explanatory-text--secondary{
+    color: #00020c;
+}
+
+.about__explanatory-text--network{
+    color: #fff;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.about__explanatory-text--station{
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.about__explanatory-text strong{
+    font-family: 'Play', sans-serif;
+    color: white;
+}
+
+.about__explanatory-text li{
+    margin-bottom: 10px;
+}
+
+.about__explanatory-important{
+    font-family: 'Play', sans-serif;
+    font-size: 1.3em;
+}
+
+
+/* Team */
+.team h1{
+    padding: 20px;
+    text-align: center;
+    background-color: #2264b0;
+    color: white;
+    font-family: 'Play', sans-serif;
+}
+
+.team-members{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.team__member {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.team__member-photo {
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.team__member:nth-child(even) .team__member-photo{
+    float: left;
+    width: 100%;
+}
+
+.team__member:nth-child(even) .team__member-info{
+    float: right;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.team__member:nth-child(odd) .team__member-photo{
+    float: right;
+    width: 100%;
+}
+
+.team__member:nth-child(odd) .team__member-info{
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.team__member-name,
+.team__member-title{
+    width: 100%;
+    text-align: center;
+    display: inline-block;    
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.team__member-name{    
+    font-size: 2rem;
+    background-color: #212529;
+    color: white;
+    font-family: 'Play', sans-serif;
+}
+
+.team__member-title{    
+    font-size: 1.3rem;
+    background-color: #9d9fa2;
+    color: #212529;
+}
+/* Team alliances*/
+.team-alliances {
+    overflow: hidden;   
+    max-width: 800px; 
+    margin: 0 auto 20px;
+}
+
+.team-alliances figure{
+    width: 100%;
+    float: left;
+    padding: 0 5px;
+    position: relative;
+    height: 30vh;
+    overflow: hidden;
+}
+
+.team-alliances figure img{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.team-alliances figure.drone-fund img{
+    max-width: 150px;
+}
+
+/*Modal*/
+.modal-body input,
+.modal-body textarea{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact__error{
+    color: red;
+}
+/* Footer */
+footer{
+    background-color: #00020c;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    font-size: 1.3rem;
+    font-family: 'Play', sans-serif;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    .team__member-photo{
+        max-width: 300px;
+    }
+
+    .team__member:nth-child(odd) .team__member-photo,
+    .team__member:nth-child(even) .team__member-photo{     
+        width: 30%;
+    }
+    
+    .team__member:nth-child(odd) .team__member-info,
+    .team__member:nth-child(even) .team__member-info{        
+        width: 70%;
+    }
+
+    .team-alliances figure{
+        width: 50%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .site-header{
+        background-image: url('../images/energy.png');
+    }
+
+    .site-header img{
+        width: 20%;
+        margin-bottom: 30px;
+    }
+
+    .site-header__floating-text,
+    .about__explanatory-text {      
+        font-size: 1.5rem;
+        padding: 40px;
+    }
+
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .site-header{
+        background-image: url('../images/energy.png');
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
