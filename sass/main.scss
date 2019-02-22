@@ -181,31 +181,27 @@ html, body{
 .team__member {
     overflow: hidden;
     margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 1px solid $enerDronesLightGray;
 }
 
 .team__member-photo {
     border-radius: 10px;
     margin-bottom: 5px;
+    max-width: 255px;
 }
 
-.team__member:nth-child(even) .team__member-photo{
-    float: left;
+.team__member-info{
+    text-align: left;
+}
+
+.team__member:nth-child(even) .team__member-photo,
+.team__member:nth-child(odd) .team__member-photo{    
     width: 100%;
 }
 
-.team__member:nth-child(even) .team__member-info{
-    float: right;
-    width: 100%;
-    padding: 0 10px;
-}
-
-.team__member:nth-child(odd) .team__member-photo{
-    float: right;
-    width: 100%;
-}
-
+.team__member:nth-child(even) .team__member-info,
 .team__member:nth-child(odd) .team__member-info{
-    float: left;
     width: 100%;
     padding: 0 10px;
 }
@@ -281,8 +277,27 @@ footer{
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
+    .team__member{
+        border-bottom: none;
+    }
     .team__member-photo{
         max-width: 300px;
+    }
+
+    .team__member:nth-child(even) .team__member-photo{
+        float: left;
+    }
+    
+    .team__member:nth-child(even) .team__member-info{
+        float: right;
+    }
+    
+    .team__member:nth-child(odd) .team__member-photo{
+        float: right;
+    }
+    
+    .team__member:nth-child(odd) .team__member-info{
+        float: left;
     }
 
     .team__member:nth-child(odd) .team__member-photo,

@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
 	//Sending the form data to the server
 	$('#send-form').on('click', function(){
 		
