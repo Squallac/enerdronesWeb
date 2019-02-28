@@ -49,27 +49,85 @@ html, body {
 }
 
 /* About */
+.about__title-separator {
+  padding: 20px;
+  font-size: 2rem;
+  font-family: "Play", sans-serif;
+  background-color: #43b2e5;
+  color: #FFFFFF;
+  text-align: center;
+}
+
 .about__item {
   position: relative;
   background: #00020c;
   height: 90vh;
 }
-
 .about__item--secondary {
   background: #9d9fa2;
 }
-
 .about__item--network {
   background-image: url("../images/network.jpg");
   background-size: cover;
   color: #FFFFFF;
 }
-
 .about__item--station {
   background-image: url("../images/chargingStation.jpg");
   background-size: cover;
   background-position: center;
   color: #FFFFFF;
+}
+.about__item--product {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about__item--product.station-bg {
+  background-image: url("../images/chargingStation.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s;
+}
+.about__item--product.energy-module-bg {
+  background-image: url("../images/electronic.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s;
+}
+.about__item--product__carousel {
+  width: 100%;
+  padding: 30px;
+  background-color: rgba(0, 2, 12, 0.7);
+}
+.about__item--product__carousel h3 {
+  margin-bottom: 25px;
+  font-family: "Play", sans-serif;
+}
+.about__item--product__carousel h4 {
+  margin-top: 50px;
+  font-family: "Play", sans-serif;
+}
+.about__item--product__carousel .slick-dots {
+  bottom: 5px;
+  left: 0;
+}
+.about__item--product__carousel .slick-slide {
+  outline: none;
+}
+.about__item--product__carousel .slick-prev {
+  left: 3px;
+}
+.about__item--product__carousel .slick-next {
+  right: 3px;
+}
+.about__item--product__carousel .slick-dots li.slick-active button:before,
+.about__item--product__carousel .slick-dots li button:before {
+  color: #FFFFFF;
+}
+.about__item--product__carousel .slick-dots li button:before {
+  font-size: 14px;
 }
 
 .about__heading {
@@ -80,7 +138,7 @@ html, body {
   right: 0;
   z-index: 1;
   background: #00020c;
-  color: #2264b0;
+  color: #43b2e5;
   opacity: 1;
   transition: opacity 1s;
   cursor: pointer;
@@ -91,7 +149,7 @@ html, body {
 }
 
 .about__heading--network {
-  background: #2264b0;
+  background: #43b2e5;
   color: #FFFFFF;
 }
 
@@ -159,7 +217,7 @@ html, body {
 .team h1 {
   padding: 20px;
   text-align: center;
-  background-color: #2264b0;
+  background-color: #43b2e5;
   color: #FFFFFF;
   font-family: "Play", sans-serif;
 }
@@ -253,6 +311,7 @@ html, body {
 .modal-body textarea {
   width: 100%;
   margin-bottom: 10px;
+  padding: 5px;
 }
 
 .contact__error {

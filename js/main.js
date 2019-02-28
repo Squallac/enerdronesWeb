@@ -1,4 +1,26 @@
 $(document).ready(function(){
+	// carousel start
+	$('.about__item--product__carousel').slick({
+		autoplay: true,
+		autoplaySpeed: 15000,
+		arrows: false,
+		dots: true
+	});
+
+	$('.about__item--product__carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		let chargingStationSlide = 0;
+		let energyModuleSlide = 1;
+
+		if(nextSlide === energyModuleSlide){
+			$('.about__item--product').removeClass('station-bg');
+			$('.about__item--product').addClass('energy-module-bg');
+		} else if(nextSlide === chargingStationSlide) {
+			$('.about__item--product').removeClass('energy-module-bg');
+			$('.about__item--product').addClass('station-bg');
+		}
+	});
+	// carousel end
+	
 	//Sending the form data to the server
 	$('#send-form').on('click', function(){
 		
