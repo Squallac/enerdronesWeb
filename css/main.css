@@ -98,6 +98,7 @@ html, body {
 }
 .about__item--product__carousel {
   width: 100%;
+  max-width: 800px;
   padding: 30px;
   background-color: rgba(0, 2, 12, 0.7);
 }

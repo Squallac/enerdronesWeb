@@ -109,6 +109,7 @@ html, body{
 
         &__carousel{
             width: 100%;
+            max-width: 800px;
             padding: 30px; 
             background-color: transparentize($enerDronesDarkBlue, 0.3);
 
