@@ -20,8 +20,10 @@ html, body {
 .site-header {
   width: 100%;
   height: 90vh;
-  background-image: url("../images/energy.png");
+  background-image: url("../images/energy_sm.jpg");
   background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -331,6 +333,10 @@ footer {
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+  .site-header {
+    background-image: url("../images/energy_md.jpg");
+  }
+
   .team__member {
     border-bottom: none;
   }
@@ -372,7 +378,7 @@ footer {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .site-header {
-    background-image: url("../images/energy.png");
+    background-image: url("../images/energy_lg.jpg");
   }
 
   .site-header img {
@@ -389,7 +395,7 @@ footer {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .site-header {
-    background-image: url("../images/energy.png");
+    background-image: url("../images/energy_xl.jpg");
   }
 }
 /* Extra large devices (large desktops, 1200px and up) */
