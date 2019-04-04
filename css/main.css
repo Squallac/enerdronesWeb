@@ -63,74 +63,38 @@ html, body {
 .about__item {
   position: relative;
   background: #00020c;
+}
+.about__item--problem {
   height: 90vh;
 }
-.about__item--secondary {
-  background: #9d9fa2;
-}
-.about__item--network {
-  background-image: url("../images/network.jpg");
-  background-size: cover;
+
+.about__article {
   color: #FFFFFF;
-}
-.about__item--station {
-  background-image: url("../images/chargingStation.jpg");
-  background-size: cover;
-  background-position: center;
-  color: #FFFFFF;
-}
-.about__item--product {
-  color: #FFFFFF;
+  height: 90vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-.about__item--product.station-bg {
+.about__article--charging {
   background-image: url("../images/chargingStation.jpg");
   background-size: cover;
   background-position: center;
   transition: background-image 0.5s;
 }
-.about__item--product.energy-module-bg {
+.about__article--energy {
   background-image: url("../images/electronic.jpg");
   background-size: cover;
   background-position: center;
   transition: background-image 0.5s;
 }
-.about__item--product__carousel {
-  width: 100%;
-  max-width: 800px;
-  padding: 30px;
-  background-color: rgba(0, 2, 12, 0.7);
+
+.about__article-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 600px;
+  padding: 1rem;
 }
-.about__item--product__carousel h3 {
-  margin-bottom: 25px;
+.about__article-content h2, .about__article-content h4 {
   font-family: "Play", sans-serif;
-}
-.about__item--product__carousel h4 {
-  margin-top: 50px;
-  font-family: "Play", sans-serif;
-}
-.about__item--product__carousel .slick-dots {
-  bottom: 5px;
-  left: 0;
-}
-.about__item--product__carousel .slick-slide {
-  outline: none;
-}
-.about__item--product__carousel .slick-prev {
-  left: 3px;
-}
-.about__item--product__carousel .slick-next {
-  right: 3px;
-}
-.about__item--product__carousel .slick-dots li.slick-active button:before,
-.about__item--product__carousel .slick-dots li button:before {
-  color: #FFFFFF;
-}
-.about__item--product__carousel .slick-dots li button:before {
-  font-size: 14px;
 }
 
 .about__heading {

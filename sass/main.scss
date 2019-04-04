@@ -69,90 +69,42 @@ html, body{
 .about__item {
     position: relative;    
     background: $enerDronesDarkBlue;
+
+    &--problem {
+        height: 90vh;
+    }
+}
+
+.about__article {
+    color: $white;    
     height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    &--secondary {        
-        background: $enerDronesLightGray;    
-    }
-
-    &--network{
-        background-image: url('../images/network.jpg');
-        background-size: cover; 
-        color: $white;
-    }
-
-    &--station{
+    &--charging {
         background-image: url('../images/chargingStation.jpg');
         background-size: cover; 
         background-position: center;
-        color: $white;
+        transition: background-image .5s;
     }
 
-    &--product{
-        color: $white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    &--energy {
+        background-image: url('../images/electronic.jpg');
+        background-size: cover; 
+        background-position: center;
+        transition: background-image .5s;
+    }    
+}
 
-        &.station-bg {
-            background-image: url('../images/chargingStation.jpg');
-            background-size: cover; 
-            background-position: center;
-            transition: background-image .5s;
-        }
+.about__article-content {
+    background-color: rgba(0,0,0,0.8);
+    max-width: 600px;
+    padding: 1rem;
 
-        &.energy-module-bg {
-            background-image: url('../images/electronic.jpg');
-            background-size: cover; 
-            background-position: center;
-            transition: background-image .5s;
-        }
-
-        &__carousel{
-            width: 100%;
-            max-width: 800px;
-            padding: 30px; 
-            background-color: transparentize($enerDronesDarkBlue, 0.3);
-
-            h3 {
-                margin-bottom: 25px;
-                font-family: $playFont;
-            }
-
-            h4 {
-                margin-top: 50px;
-                font-family: $playFont;
-            }
-
-            .slick-dots {
-                bottom: 5px;
-                left: 0;
-            }
-
-            .slick-slide{
-                outline: none;
-            }
-
-            .slick-prev {
-                left: 3px;
-            }
-
-            .slick-next{
-                right: 3px;
-            }
-
-            .slick-dots li.slick-active button:before,
-            .slick-dots li button:before {
-                color: $white;
-            }
-
-            .slick-dots li button:before {
-                font-size: 14px;
-            }
-        }
+    h2, h4{
+        font-family: $playFont;
     }
-
 }
 
 .about__heading {

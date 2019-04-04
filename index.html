@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/regular.css" integrity="sha384-OEIzojYBMrmz48aIjVQj7VG38613/sxpP58OW9h5zBYC7biGFlv9tyu5kWmaAYlF" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -55,7 +53,7 @@
 
     <!--About-->
     <article id="about" class="about">
-        <section id="problem" class="about__item">
+        <section id="problem" class="about__item about__item--problem">
             <h1 class="about__heading m-0">
                 <span class="about__heading-text">The opportunity <i class="far fa-hand-point-up d-block d-md-none d-lg-none animated pulse infinite"></i></span>    
                 
@@ -72,10 +70,10 @@
         <section class="about__title-separator">
             Our solution
         </section>
-        <section class="about__item about__item--product station-bg">
-            <div class="about__item--product__carousel">
-                <div>
-                    <h3>Charging Station</h3>
+        <section class="about__item">
+            <article class="about__article about__article--charging">
+                <div class="about__article-content">
+                    <h2>Charging Station</h2>
                     <p>
                         EnerDrones charging system is a station for drones where to land and <strong>charge their batteries in
                         a matter of minutes</strong> instead of hours. Sleek designed outdoors Energy beaming station using microwave technology to wirelessly fast-charge 
@@ -88,9 +86,11 @@
                         <li>Increases drone range, operational time and payload</li>
                         <li>Improves efficency and profitability</li>
                     </ul>
-                </div>
-                <div>
-                    <h3>Energy absorption module</h3>
+                </div>                
+            </article>
+            <article class="about__article about__article--energy">
+                <div class="about__article-content">
+                    <h2>Energy absorption module</h2>
                     <p>Module containing communications, charging control
                             electronics and the nanotechnology rectenna to absorb the
                             microwave energy beam.
@@ -100,8 +100,8 @@
                         <li>Charging battery 7x faster</li>                        
                         <li>High efficiency nanotechnology rectenna</li>
                     </ul>
-                </div>
-            </div>
+                </div>                
+            </article>
         </section>        
     </article>
 
@@ -235,7 +235,6 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
