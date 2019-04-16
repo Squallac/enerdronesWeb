@@ -76,7 +76,7 @@ html, body {
   justify-content: center;
 }
 .about__article--charging {
-  background-image: url("../images/chargingStation.jpg");
+  background-image: url("../images/chargingStation_sm.jpg");
   background-size: cover;
   background-position: center;
   transition: background-image 0.5s;
@@ -297,10 +297,6 @@ footer {
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-  .site-header {
-    background-image: url("../images/energy_md.jpg");
-  }
-
   .team__member {
     border-bottom: none;
   }
@@ -342,7 +338,7 @@ footer {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .site-header {
-    background-image: url("../images/energy_lg.jpg");
+    background-image: url("../images/energy_md.jpg");
   }
 
   .site-header img {
@@ -355,13 +351,30 @@ footer {
     font-size: 1.5rem;
     padding: 40px;
   }
+
+  .about__article--charging {
+    background-image: url("../images/chargingStation_md.jpg");
+  }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .site-header {
-    background-image: url("../images/energy_xl.jpg");
+    background-image: url("../images/energy_lg.jpg");
+  }
+
+  .about__article--charging {
+    background-image: url("../images/chargingStation_lg.jpg");
   }
 }
 /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .site-header {
+    background-image: url("../images/energy_xl.jpg");
+  }
+
+  .about__article--charging {
+    background-image: url("../images/chargingStation_xl.jpg");
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
