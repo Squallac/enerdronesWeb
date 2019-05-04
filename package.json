@@ -1,0 +1,17 @@
+{
+	"scripts": {
+		"minifyJs": "uglifyjs js/main.js --compress --mangle --output js/main.min.js",
+        "generateSass": "sass sass:css --style compressed",
+        "build": "npm run minifyJs; npm run generateSass"
+	},
+	"dependencies": {
+		"sass": "^1.20.1",
+		"uglify-js": "^3.5.10"
+	},
+	"devDependencies": {},
+	"name": "EnerDrones",
+	"version": "5.0.0",
+	"description": "EnerDrones website",
+	"author": "Raul Ruiz <raul@enerdrones.hk>",
+	"license": "MIT"
+}

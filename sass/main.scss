@@ -89,7 +89,7 @@ html, body{
     }
 
     &--energy {
-        background-image: url('../images/electronic.jpg');
+        background-image: url('../images/electronic_sm.jpg');
         background-size: cover; 
         background-position: center;
         transition: background-image .5s;
@@ -365,9 +365,11 @@ footer{
         &--charging {
             background-image: url('../images/chargingStation_md.jpg');
         }
-    }
 
-    
+        &--energy {
+            background-image: url('../images/electronic_md.jpg');
+        }
+    }    
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -379,6 +381,10 @@ footer{
     .about__article { 
         &--charging {
             background-image: url('../images/chargingStation_lg.jpg');
+        }
+
+        &--energy {
+            background-image: url('../images/electronic_lg.jpg');
         }
     }
 }
@@ -392,6 +398,10 @@ footer{
     .about__article { 
         &--charging {
             background-image: url('../images/chargingStation_xl.jpg');
+        }
+
+        &--energy {
+            background-image: url('../images/electronic_xl.jpg');
         }
     }
 }
