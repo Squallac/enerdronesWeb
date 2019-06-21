@@ -23,7 +23,7 @@ html, body{
 .site-header {
     width: 100%;
     height: 90vh;
-    background-image: url('../images/energy_sm.jpg');
+    background-image: url('../images/chargingStation_sm.jpg');
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -52,6 +52,7 @@ html, body{
     color: $white;    
     padding: 20px;
 
+    animation-delay: 1s;
     animation-duration: 2.5s;
 }
 
@@ -82,7 +83,7 @@ html, body{
     justify-content: center;
 
     &--charging {
-        background-image: url('../images/chargingStation_sm.jpg');
+        background-image: url('../images/chargingStationDay_sm.jpg');
         background-size: cover; 
         background-position: center;
         transition: background-image .5s;
@@ -97,7 +98,7 @@ html, body{
 }
 
 .about__article-content {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 8, 53, 0.753);    
     max-width: 600px;
     padding: 1rem;
 
@@ -264,11 +265,13 @@ html, body{
 
 .team-alliances figure{
     width: 100%;
-    float: left;
+    //float: left;
     padding: 0 5px;
     position: relative;
     height: 30vh;
     overflow: hidden;
+    max-width: 350px;
+    margin: 0 auto;
 }
 
 .team-alliances figure img{
@@ -281,6 +284,69 @@ html, body{
 
 .team-alliances figure.drone-fund img{
     max-width: 150px;
+}
+
+/*Social Media*/
+
+.team-contact {
+
+    &__email {
+        text-align: center;
+        h4 {        
+            font-size: 36px;
+            margin: 60px 0;
+        }
+    }
+
+    &__email-button {
+        background: $enerDronesMediumBlue;
+        color: $white;
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+        animation-duration: 2.5s;
+        transition: background 0.4s;
+
+        &:hover{
+            background: $enerDronesDarkBlue;
+            transition: background 0.4s;
+        }
+    }
+    
+    &__social-media{
+        h3 {
+            font-family: "Play",sans-serif;
+            border-bottom: 1px solid black;
+            padding: 50px 10px 10px;
+        }
+
+        img {
+            max-width: 150px;
+        }
+
+        a:hover {
+            text-decoration: none;            
+        }
+
+        figcaption{
+            text-align: center;
+            color: $enerDronesDarkGray;
+            background: $enerDronesLightGray;
+            border-radius: 5px;            
+        }
+
+        &-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+            padding: 50px 0;
+        }        
+    }
+    
 }
 
 /*Modal*/
@@ -347,7 +413,7 @@ footer{
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     .site-header{
-        background-image: url('../images/energy_md.jpg');
+        background-image: url('../images/chargingStation_md.jpg');
     }
 
     .site-header img{
@@ -363,7 +429,7 @@ footer{
 
     .about__article { 
         &--charging {
-            background-image: url('../images/chargingStation_md.jpg');
+            background-image: url('../images/chargingStationDay_md.jpg');
         }
 
         &--energy {
@@ -375,12 +441,12 @@ footer{
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .site-header{
-        background-image: url('../images/energy_lg.jpg');
+        background-image: url('../images/chargingStation_lg.jpg');
     }
 
     .about__article { 
         &--charging {
-            background-image: url('../images/chargingStation_lg.jpg');
+            background-image: url('../images/chargingStationDay_lg.jpg');
         }
 
         &--energy {
@@ -392,12 +458,12 @@ footer{
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
     .site-header{
-        background-image: url('../images/energy_xl.jpg');
+        background-image: url('../images/chargingStation_xl.jpg');
     }
 
     .about__article { 
         &--charging {
-            background-image: url('../images/chargingStation_xl.jpg');
+            background-image: url('../images/chargingStationDay_xl.jpg');
         }
 
         &--energy {

@@ -12,6 +12,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/regular.css" integrity="sha384-OEIzojYBMrmz48aIjVQj7VG38613/sxpP58OW9h5zBYC7biGFlv9tyu5kWmaAYlF" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140666104-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140666104-1');
+    </script>
 </head>
 
 <body>
@@ -33,7 +42,10 @@
                     <a class="nav-link" href="#team">Team</a>
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">                        
+                    <a class="nav-link" href="#contact-us">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#contactUsModal">                        
                         <i class="far fa-envelope animated slideInUp"></i>
                     </button>
                 </li>
@@ -189,20 +201,77 @@
         <section id="alliances" class="team-alliances">
             <figure>
                 <img alt="iRobotics" src="images/alliances/iRobotics.png" />
-            </figure>
-            <figure class="drone-fund">
-                <img alt="Drone Fund" src="images/alliances/droneFund.png" />
-            </figure>            
+            </figure>         
+        </section>
+
+        <h1>Contact</h1>
+        <section id="contact-us" class="team-contact">
+            <div class="team-contact__email">
+                <h4>We want to hear your comments</h4>
+                <button class="team-contact__email-button animated pulse infinite" 
+                        data-toggle="modal" 
+                        data-target="#contactUsModal">
+                    Send email
+                </button>
+            </div>            
+            <div class="team-contact__social-media">
+                <h3>Social media</h3>
+
+                <div class="team-contact__social-media-wrapper">
+                    <a target="_blank" href="https://twitter.com/@DronesEner">
+                        <figure>
+                            <img class="team-contact__social-media-img" 
+                                 src="./images/socialMedia/twitter.png"
+                                 alt="Crunchbase">
+                            <figcaption>Twitter</figcaption>
+                        </figure>
+                    </a>
+    
+                    <a target="_blank" href="https://www.linkedin.com/company/enerdrones/about/">
+                        <figure>
+                            <img class="team-contact__social-media-img" 
+                                 src="./images/socialMedia/linkedin.png"
+                                 alt="Crunchbase">
+                            <figcaption>LinkedIn</figcaption>
+                        </figure>
+                    </a>
+                    
+                    <a target="_blank" href="https://www.crunchbase.com/organization/enerdrones#section-overview">
+                        <figure>
+                            <img class="team-contact__social-media-img" 
+                                 src="./images/socialMedia/crunchbase.png"
+                                 alt="Crunchbase">
+                            <figcaption>Crunchbase</figcaption>
+                        </figure>
+                    </a>
+                    <a target="_blank" href="https://www.f6s.com/enerdroneslimited">
+                        <figure>
+                            <img class="team-contact__social-media-img" 
+                                 src="./images/socialMedia/f6s.png"
+                                 alt="F6S">
+                            <figcaption>F6S</figcaption>
+                        </figure>
+                    </a>
+                    <a target="_blank" href="https://angel.co/company/enerdrones">
+                        <figure>
+                            <img class="team-contact__social-media-img" 
+                                 src="./images/socialMedia/angelList.png"
+                                 alt="Angel List">
+                            <figcaption>Angel List</figcaption>
+                        </figure>
+                    </a>
+                </div>                
+            </div>
         </section>
     </article>
 
     <!--Modal contact-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="send email modal"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header ">
-                    <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Send email</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>

@@ -89,7 +89,15 @@ $(document).ready(function(){
             }
 
             $(this).addClass(classesToApply);
-        });
+		});
+		
+		$('.team-contact__social-media-img').each(function(index, element){
+            
+			if ($(this).hasClass('animated') || !checkVisible(element)) return;
+			
+			var classesToApply = 'animated bounceInLeft';
+			$(this).addClass(classesToApply);
+		});
     });
     
     function checkVisible(elm) {
